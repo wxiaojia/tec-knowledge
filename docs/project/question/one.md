@@ -1,6 +1,6 @@
 
 ## 1. 混用 require 和 import
-如果项目中存在混用 commonJS 和 ES6 模块的情况，需要使用 @originjs/vite-plugin-commonjs 这个插件的 transformMixedEsModules 配置进行 hotfix。不然会报错Uncaught ReferenceError: require is not defined。_不过，尽量不要混用，因为尤大大说了这么干不好....Vite will likely never support such dependencies.[7]_
+如果项目中存在混用 commonJS 和 ES6 模块的情况，需要使用 @originjs/vite-plugin-commonjs 这个插件的 transformMixedEsModules 配置进行 hotfix。不然会报错Uncaught ReferenceError: require is not defined。_不过，尽量不要混用，因为尤大大说了这么干不好....
 ```js
 import { defineConfig } from 'vite'
 import { viteCommonjs } from '@originjs/vite-plugin-commonjs';
