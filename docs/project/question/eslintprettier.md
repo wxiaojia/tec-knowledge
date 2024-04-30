@@ -122,6 +122,24 @@ Parsing error: The keyword 'export' is reserved
 9) 使用4个空格而不用制表符：
  useTabs: false,
 
+10) 数组对象最后一个逗号 eslint prettier冲突
+.prettier
+```json
+{
+  "trailingComma": "none"
+}
+```
+.eslintrc.
+```json
+{
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+若无效，重启下编辑器
+
 ## prettier的一些配置
 ```js
 module.exports = {
