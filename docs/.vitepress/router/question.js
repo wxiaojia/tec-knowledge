@@ -5,6 +5,9 @@ const question = [
       text: '项目遇到的问题',
       items: [
         { text: '关于构建部署踩的坑', link: baseUrl+'one' },
+        { text: 'babel配置', link: baseUrl+'babel' },
+        { text: 'es6 动态导入', link: baseUrl+'dynamicImport' },
+        { text: 'eslint prettier', link: baseUrl+'eslintprettier' },
       ]
     },
     {

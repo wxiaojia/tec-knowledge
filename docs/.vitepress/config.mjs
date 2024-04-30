@@ -7,6 +7,7 @@ import pluginRoute from './router/plugin'
 import questionRoute from './router/question'
 import cliRoute from './router/cli'
 import reactRoute from './router/react'
+import nodeRoute from './router/node'
 
 const PR = '/project'
 // https://vitepress.dev/reference/site-config
@@ -26,7 +27,8 @@ export default defineConfig({
           { text: 'webpack', link: PR+'/webpack/index' },
           { text: 'plugin', link: PR+'/plugin/index' },
           { text: 'react', link : PR+'/react/hook'},
-          { text: '脚手架', link: PR+'/cli/create' }
+          { text: '脚手架', link: PR+'/cli/create' },
+          { text: 'node', link: PR+'/node/commands' }
         ]
       },
       {
@@ -60,7 +62,8 @@ export default defineConfig({
       '/project/plugin': pluginRoute,
       '/project/cli': cliRoute,
       '/project/others/': othersRoute,
-      '/project/question/': questionRoute
+      '/project/question/': questionRoute,
+      '/project/node': nodeRoute
     },
 
     socialLinks: [

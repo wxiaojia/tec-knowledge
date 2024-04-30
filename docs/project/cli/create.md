@@ -99,9 +99,7 @@ console.log('Welcome to Polarizon');
 
 把 polarizon-cli 依赖包引入，执行 pnpm i 安装依赖，其效果就跟执行 npm install \-g polarizon-cli一样，只不过不是全局安装而已，只在调试子工程内安装 polarizon-cli 脚手架。然后调试子工程就直接引用脚手架子工程本地编译打包后的产物，而不是发布到 npm 上的产物，彻底做到本地调试。
 
-
 另外脚手架子工程和调试子工程是在同一个工程中，这样就做一对一的调试，从而解决了使用 npm link 来实现本地调试的弊端。
-
 
 同时在 scripts 定义了脚本命令，在调试工程中执行 pnpm polarizon 既是执行了 polarizon 命令，不用脚手架工程中执行 npm link 就可以运行 polarizon 命令。
 

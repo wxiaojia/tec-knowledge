@@ -53,7 +53,6 @@ serve --port 80
 serve --port=80  // 常用
 ```
 
-
 ## 命令注册
 先看一个最简单的例子:
 ```js
@@ -79,6 +78,38 @@ options { separator: ',' }
 ```
 
 > 【注意】 <>表示必填，[]表示可选
+
+### 可选参数定义及获取
+```js
+const { program } = require('commander');
+
+program
+  .option('-p, --port <port>', 'specify port', '8080')
+  .action((options) => {
+    console.log(`Port: ${options.port}`);
+  });
+
+program.parse(process.argv);
+```
+> node yourprogram.js -p 3000
+
+### 必选参数定义及获取
+```js
+const { program } = require('commander');
+
+program
+  .requiredOption('-p, --port <port>', 'specify port')
+  .action((options) => {
+    if (!options.port) {
+      console.error('Error: Port is required');
+      program.help(); // 显示帮助信息
+    }
+    console.log(`Port: ${options.port}`);
+  });
+
+program.parse(process.argv);
+```
+.requiredOption() 方法定义了一个名为 port 的必选参数。在 .action() 方法中，我们首先检查 options.port 是否存在，如果不存在则打印错误信息，并显示命令的帮助信息以提供用户帮助。
 
 ### 命令参数与命令分开
 上面的那种写法把命令的参数(source, destination)和命令写在一起，其实我们可以分开写(推荐分开写):
