@@ -23,8 +23,8 @@ https://juejin.cn/post/7344282440725577765
 
 ## 4.18
 别忘了前端是靠什么起家的
-
 https://mp.weixin.qq.com/s/ip4B-UY40CIMtWScScjHtA
+https://mp.weixin.qq.com/s/KlsdXG5Q_8Ql4Y29kvcqkw
 
 【5000字】带你了解透彻浏览器缓存！
 
@@ -125,3 +125,31 @@ https://mp.weixin.qq.com/s/9JUOG4XxcyUsrKFEq5Y8VQ
 前端科普：什么是API网关？ 为什么它有用？
 
 https://mp.weixin.qq.com/s/IIhAmLGgDCL0buoSlke1ww
+
+## 5.6
+【第3251期】Webcodecs音视频编解码与封装技术探索
+https://mp.weixin.qq.com/s/W-1xR8XCH-T4AqLY3JhgIw
+
+三分钟，掌握 3 种前端埋点方式！
+https://mp.weixin.qq.com/s/FYgLjK83WVOnwdTWeTew7Q
+
+开发一个组件库，需要学哪些技术栈呢？
+https://mp.weixin.qq.com/s/xxdy5ATvSPMhxNB-dcmsuA
+
+前端简历项目没亮点怎么办？那就编啊！！
+https://mp.weixin.qq.com/s/DfPqLIbXbAHsDFxigSephw
+
+有人抵触ref？有人抵触reactive？
+https://mp.weixin.qq.com/s/urCk9U8EjS8PYTApKBVz1w
+
+Web Components 取代 Vue？我觉得不太行~
+https://mp.weixin.qq.com/s/c_3sxLMJi5tnRWEOhd16CA
+
+Vite 4.3 为何性能爆表？（第一次知道 Node 竟还有这个冷门性能问题...）
+https://mp.weixin.qq.com/s/Rsckm8aK9TPymDBpVz2AoQ
+
+JavaScript 可视化：Promise执行彻底搞懂
+https://mp.weixin.qq.com/s/zCFUfCaAxCVn3poFtyZR0A
+
+前端开发中大并发量如何控制并发数
+https://mp.weixin.qq.com/s/lT4gXnXsuVlBir3-jdoxTQ
