@@ -1,10 +1,14 @@
+
+const baseUrl = '/project/others/'
 const others = [
     {
       text: '其他',
       items: [
-        { text: '网关', link: '/others/gateway' },
-        { text: 'React vs Svelte', link: '/others/ReVsSv' },
-        { text: '未看', link: '/others/thirdty' },
+        { text: '网关', link: baseUrl+'gateway' },
+        { text: 'React vs Svelte', link: baseUrl+'ReVsSv' },
+        { text: 'npm npx等', link: baseUrl+'package' },
+        { text: 'pnpm', link: baseUrl+'pnpm' },
+        { text: '未看', link: baseUrl+'thirdty' },
       ]
     }
   ]
