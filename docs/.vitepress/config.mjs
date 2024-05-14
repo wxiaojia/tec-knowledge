@@ -5,6 +5,7 @@ import vue2Route from './router/vue2'
 import othersRoute from './router/others'
 import pluginRoute from './router/plugin'
 import questionRoute from './router/question'
+import threeRoute from './router/three'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -21,7 +22,8 @@ export default defineConfig({
           { text: 'vue2', link: '/vue2/index' },
           { text: 'vue3', link: '/vue3/index' },
           { text: 'webpack', link: '/webpack/index' },
-          { text: 'plugin', link: '/plugin/index' }
+          { text: 'plugin', link: '/plugin/index' },
+          { text: 'threejs', link: '/project/three/index' }
         ]
       },
       {
@@ -53,7 +55,8 @@ export default defineConfig({
       ],
       '/plugin': pluginRoute,
       '/others/': othersRoute,
-      '/question/': questionRoute
+      '/question/': questionRoute,
+      '/project/three': threeRoute
     },
 
     socialLinks: [
