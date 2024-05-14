@@ -23,43 +23,65 @@ http工具
 通过init 选择vue-cli/create-vite或者cypridina
 通过init 添加参数 选择以上的其中一种
 
-1、可选择vue-cli/create-vite的基础上加点东西
-- [✔] vue-cli的基础上生成
-- [ ] 添加请求: axios相关的（参考玄同\国营等）graphql?以哪个为模板
-- [ ] 选择UI： gendo-ui-vue3、 ant-desgin-vue、当前流行的UI, 是否按需加载？
-- [ ] 添加CICD模块：nginx、jenkinsfile、docker, 选择：1）在docker中打包的，2）直接配置jenkinsfile
-- [ ] 路由
-- [ ] css处理器 scss less stylus
-- [ ] 状态 vuex pinia
-
-2、使用冬哥写的cypridina
+1、使用冬哥写的cypridina
 - [✔] 拉取
 - [✔] 修改package:name version
 - [✔] 添加参数，拉取不同分支的代码，--> 2)
 
-3、类似玄同的模板
+讨论：
 
 通用功能：
 · 模板仓库? 玄同模板？yudao？
-· 添加CICD模块
-· 通用业务模块: 
-  axios 登录，菜单配置，用户管理，字典管理，角色管理等
-· 提供可插拔的功能插件（权限、埋点、sentry等 ?
-· 基于接口定义生成接口定义代码的功能 --- 目前可通过swagger生成api文件夹
-· 有全栈项目初始化能力 -- 设置拉取的仓库模板
-代码格式：
-· 统一代码格式 eslint + prettier
+· 添加CICD模块 - 选择，讨论
+· 通用业务模块:
+  axios 登录，菜单配置，用户管理，字典管理，角色管理等
+· 提供可插拔的功能插件
+· 基于接口定义生成接口定义代码的功能 --- 目前可通过swagger生成api文件夹，+ 1）交互式输入/已给的json文件 2）graphql
 
+· 有全栈项目初始化能力 -- 设置拉取的仓库模板
+
+· 添加命令说明 如：CICD/ 列出已有的模块功能
 
 关于模板：
-1、像玄同v3的，可以选择安装gendo-ui-vue3、gendo-utils、gendo-shared
-2、像国银的，使用yudao-ui-admin-vben(ant-design-vue的)或者yudao-ui-admin-vue3(element-plus)的
-3、其他不是后台管理的项目？
+1、像玄同v3的，可以选择安装gendo-ui-vue3、gendo-utils、gendo-shared，
+2、像国银的，使用yudao-ui-admin-vben(ant-design-vue的)或者yudao-ui-admin-vue3(element-plus)的❌
+3、其他不是后台管理的项目？❌
 
-关于功能：
-· 通用业务模块: 
-  axios 登录，菜单配置，用户管理，字典管理，角色管理等（yudao-ui-admin-vben有或者玄同？可做成可插拔的）
+【待办】关于功能：
+· 通用业务模块:
+  登录，菜单配置，用户管理，字典管理，角色管理等（yudao-ui-admin-vben有或者玄同？可做成可插拔的）
 
+讨论结果：0509
+1 初始化时列出需要的模板:
+  1) 前端模板 
+  2) 海莹(跟冬哥对,需要模板转化)
+
+2 前端模板: 以玄同框架为模板
+可供选择要安装的gendo-ui-vue3、gendo-utils、gendo-shared，
+
+3 关于CICD:需要讨论,需要什么东西
+选择是否在docker内打
+
+4 基于接口定义生成接口定义代码的功能 
+  1）交互式输入/已给的json文件 
+  2）graphql
+
+5 命令行添加说明:git add 
+  列出当前有得模块
+
+
+## 模板解析
+### mustash
+### handlebars
+https://cloud.tencent.com/developer/article/2198709
+```js
+ //遍历替换模板
+Object.keys(files).forEach(fileName => {
+    const fileContentsString = files[fileName].contents.toString();
+    //Handlebar compile 前需要转换为字符串
+    files[fileName].contents = new Buffer(Handlebars.compile(fileContentsString)(metalsmith.metadata()));
+});
+```
 
 ## 项目改成ts:
 1、更好的兼容性

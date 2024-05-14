@@ -14,6 +14,7 @@ const question = [
       text: '其他问题',
       items: [
         { text: '为什么只能忘记或修改密码', link: baseUrl+'pwd' },
+        { text: '做后台比较多，怎么提升自己', link: baseUrl+'promote' },
       ]
     },
     {

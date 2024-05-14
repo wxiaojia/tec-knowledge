@@ -133,9 +133,6 @@ https://mp.weixin.qq.com/s/W-1xR8XCH-T4AqLY3JhgIw
 三分钟，掌握 3 种前端埋点方式！
 https://mp.weixin.qq.com/s/FYgLjK83WVOnwdTWeTew7Q
 
-开发一个组件库，需要学哪些技术栈呢？
-https://mp.weixin.qq.com/s/xxdy5ATvSPMhxNB-dcmsuA
-
 前端简历项目没亮点怎么办？那就编啊！！
 https://mp.weixin.qq.com/s/DfPqLIbXbAHsDFxigSephw
 
@@ -153,3 +150,34 @@ https://mp.weixin.qq.com/s/zCFUfCaAxCVn3poFtyZR0A
 
 前端开发中大并发量如何控制并发数
 https://mp.weixin.qq.com/s/lT4gXnXsuVlBir3-jdoxTQ
+
+## 5.8
+vue3早已具备抛弃虚拟DOM的能力了
+https://mp.weixin.qq.com/s/5VAzF5C-KceluQhUNR_25Q
+为什么？是怎么有这样的说法，证明？
+不需要虚拟DOM，性能问题呢？
+那已经具备，为什么不现在抛弃呢？
+
+【Vue3】如何封装一个超级好用的 Hook ！
+https://mp.weixin.qq.com/s/6R34jVJBxLUa-Erq5MM08g
+
+
+## 5.9
+leader
+https://mp.weixin.qq.com/s/sUxK_J_SzH0SuJhoWavW-A
+
+滥用watch
+https://mp.weixin.qq.com/s/ht0gudk4r6QyQcf7i2C7rQ
+
+hook
+https://mp.weixin.qq.com/s/qd17ShoNMyR2Gik7LcUuMQ
+
+
+后台管理-提升：
+https://juejin.cn/post/7360528073631318027
+
+https://juejin.cn/post/7329126541320536074
+
+https://juejin.cn/post/7357976193271857203
+
+https://zhuanlan.zhihu.com/p/71385053

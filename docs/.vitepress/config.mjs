@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 import vue3Route from './router/vue3'
 import vue2Route from './router/vue2'
+import vueRoute from './router/vue'
 import othersRoute from './router/others'
 import pluginRoute from './router/plugin'
 import questionRoute from './router/question'
@@ -24,6 +25,7 @@ export default defineConfig({
         items: [
           { text: 'vue2', link: PR+'/vue2/index' },
           { text: 'vue3', link: PR+'/vue3/index' },
+          { text: 'vue', link: PR+'/vue/transform' },
           { text: 'webpack', link: PR+'/webpack/index' },
           { text: 'plugin', link: PR+'/plugin/index' },
           { text: 'react', link : PR+'/react/hook'},
@@ -55,6 +57,7 @@ export default defineConfig({
     sidebar: {
       '/project/vue3/': vue3Route,
       '/project/vue2/': vue2Route,
+      '/project/vue/': vueRoute,
       '/markdown-examples/': [
 
       ],
