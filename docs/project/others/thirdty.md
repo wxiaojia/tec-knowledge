@@ -181,3 +181,6 @@ https://juejin.cn/post/7329126541320536074
 https://juejin.cn/post/7357976193271857203
 
 https://zhuanlan.zhihu.com/p/71385053
+
+nodejs:建议看完learn
+https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
