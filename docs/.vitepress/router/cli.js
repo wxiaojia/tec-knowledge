@@ -9,7 +9,8 @@ const cli = [
         { text: '分析vue-cli生成步骤', link: baseUrl+ 'fakeVueCli'},
         { text: 'yargs', link: baseUrl+ 'yargs'},
         { text: 'commander', link: baseUrl+ 'commander'},
-        { text: 'yargs vs commander', link: baseUrl+ 'yargsvscommander'}
+        { text: 'yargs vs commander', link: baseUrl+ 'yargsvscommander'},
+        { text: 'lerna vs monorepo', link: baseUrl+ 'lernaVSmonorepo'}
       ]
     }
   ]

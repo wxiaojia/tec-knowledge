@@ -6,9 +6,11 @@ import vueRoute from './router/vue'
 import othersRoute from './router/others'
 import pluginRoute from './router/plugin'
 import questionRoute from './router/question'
+import threeRoute from './router/three'
 import cliRoute from './router/cli'
 import reactRoute from './router/react'
 import nodeRoute from './router/node'
+import avRoute from './router/av'
 
 const PR = '/project'
 // https://vitepress.dev/reference/site-config
@@ -23,14 +25,16 @@ export default defineConfig({
       {
         text: '学习文档',
         items: [
-          { text: 'vue2', link: PR+'/vue2/index' },
-          { text: 'vue3', link: PR+'/vue3/index' },
+          { text: 'vue2', link: '/vue2/index' },
+          { text: 'vue3', link: '/vue3/index' },
+          { text: 'webpack', link: '/webpack/index' },
+          { text: 'plugin', link: '/plugin/index' },
+          { text: 'threejs', link: '/project/three/index' },
           { text: 'vue', link: PR+'/vue/transform' },
-          { text: 'webpack', link: PR+'/webpack/index' },
-          { text: 'plugin', link: PR+'/plugin/index' },
           { text: 'react', link : PR+'/react/hook'},
           { text: '脚手架', link: PR+'/cli/create' },
-          { text: 'node', link: PR+'/node/commands' }
+          { text: 'node', link: PR+'/node/commands' },
+          { text: '音视频', link: PR+'/AV/index' }
         ]
       },
       {
@@ -61,12 +65,14 @@ export default defineConfig({
       '/markdown-examples/': [
 
       ],
+      '/project/three': threeRoute,
       '/project/react': reactRoute,
       '/project/plugin': pluginRoute,
       '/project/cli': cliRoute,
       '/project/others/': othersRoute,
       '/project/question/': questionRoute,
-      '/project/node': nodeRoute
+      '/project/node': nodeRoute,
+      '/project/AV': avRoute
     },
 
     socialLinks: [
