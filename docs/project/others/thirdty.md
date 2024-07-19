@@ -242,3 +242,12 @@ https://mp.weixin.qq.com/s/x6Mjq2RFLY-93WppLKP4Pw
 
 只写后台管理的前端要怎么提升自己
 https://mp.weixin.qq.com/s/Am83tKaLtOcSN2x5sSBykA
+
+# 7.10 
+浏览器插件：
+https://mp.weixin.qq.com/s/J_Ky4STtOPZuaQvXhq6IQQ
+b站的一个主页修改插件（可以找来当学习）https://github.com/BewlyBewly/BewlyBewly
+
+前端部署：不需要服务器、域名（可以用来部署该项目）
+ 3 种无需服务器和域名并且完全免费的前端项目快速部署方式 —— Vercel、Github Pages 和 Netlify，
+https://mp.weixin.qq.com/s/j8o30Zl1iDbgEu46m3Ek2g
