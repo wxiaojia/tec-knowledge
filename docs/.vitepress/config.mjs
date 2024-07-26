@@ -11,6 +11,7 @@ import cliRoute from './router/cli'
 import reactRoute from './router/react'
 import nodeRoute from './router/node'
 import avRoute from './router/av'
+import serverRoute from './router/docker'
 
 const PR = '/project'
 // https://vitepress.dev/reference/site-config
@@ -34,7 +35,8 @@ export default defineConfig({
           { text: 'react', link : PR+'/react/hook'},
           { text: '脚手架', link: PR+'/cli/create' },
           { text: 'node', link: PR+'/node/commands' },
-          { text: '音视频', link: PR+'/AV/index' }
+          { text: '音视频', link: PR+'/AV/index' },
+          { text: '服务器', link: PR+'/server/docker' }
         ]
       },
       {
@@ -72,7 +74,8 @@ export default defineConfig({
       '/project/others/': othersRoute,
       '/project/question/': questionRoute,
       '/project/node': nodeRoute,
-      '/project/AV': avRoute
+      '/project/AV': avRoute,
+      '/project/server': serverRoute
     },
 
     socialLinks: [
