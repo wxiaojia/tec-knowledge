@@ -69,7 +69,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 ```js
 document.body.appendChild(renderer.domElement);
 ```
-现在，当您查看页面时，您会注意到一个白色屏幕，其中有垂直和水平滚动空间。这表明我们的代码设置是正确的。但是，您可能想要删除可滚动空间，因为它不是画布的一部分；它是由浏览器默认添加的。要删除它，我们需要将元素margin的CSS 设置<body>为 0。
+现在，当您查看页面时，您会注意到一个白色屏幕，其中有垂直和水平滚动空间。这表明我们的代码设置是正确的。但是，您可能想要删除可滚动空间，因为它不是画布的一部分；它是由浏览器默认添加的。要删除它，我们需要将元素margin的CSS 设置body为 0。
 
 ```html
 <style>

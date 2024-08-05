@@ -11,7 +11,10 @@ import cliRoute from './router/cli'
 import reactRoute from './router/react'
 import nodeRoute from './router/node'
 import avRoute from './router/av'
-import serverRoute from './router/docker'
+import serverRoute from './router/server'
+import AIRoute from './router/ai'
+import payCourseRoute from './router/payCourse'
+import notesRoute from './router/notes'
 
 const PR = '/project'
 // https://vitepress.dev/reference/site-config
@@ -26,11 +29,11 @@ export default defineConfig({
       {
         text: '学习文档',
         items: [
-          { text: 'vue2', link: '/vue2/index' },
-          { text: 'vue3', link: '/vue3/index' },
-          { text: 'webpack', link: '/webpack/index' },
-          { text: 'plugin', link: '/plugin/index' },
-          { text: 'threejs', link: '/project/three/index' },
+          // { text: 'vue2', link: PR+'/vue2/index' },
+          { text: 'vue3', link: PR+'/vue3/index' },
+          // { text: 'webpack', link: PR+'/webpack/index' },
+          { text: 'plugin', link: PR+'/plugin/index' },
+          { text: 'threejs', link: PR+'/three/index' },
           { text: 'vue', link: PR+'/vue/transform' },
           { text: 'react', link : PR+'/react/hook'},
           { text: '脚手架', link: PR+'/cli/create' },
@@ -45,6 +48,15 @@ export default defineConfig({
       },
       {
         text: '一些概念', link: PR+'/others/gateway' 
+      },
+      {
+        text: 'AI', link: PR+'/AI/index' 
+      },
+      {
+        text: 'b付费课程', link: PR+'/payCourse/哲学看透世界' 
+      },
+      {
+        text: '播客/书笔记', link: PR+'/notes/books/influence' 
       }
     ],
     outlineTitle: '本页导航',
@@ -69,13 +81,17 @@ export default defineConfig({
       ],
       '/project/three': threeRoute,
       '/project/react': reactRoute,
+      // '/project/webpack': pluginRoute,
       '/project/plugin': pluginRoute,
       '/project/cli': cliRoute,
       '/project/others/': othersRoute,
       '/project/question/': questionRoute,
       '/project/node': nodeRoute,
       '/project/AV': avRoute,
-      '/project/server': serverRoute
+      '/project/server': serverRoute,
+      '/project/AI': AIRoute,
+      '/project/payCourse': payCourseRoute,
+      '/project/notes': notesRoute
     },
 
     socialLinks: [
