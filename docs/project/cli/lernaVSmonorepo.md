@@ -12,9 +12,8 @@ cd ./my-library     # 进入包目录
 npm link            # 创建全局链接                     
 cd ./my-application    # 进入其他包目录。
 npm link my-library    # 链接安装包 
-```
-或者合起来: npm link <package-path>
-```js
+
+// 或者合起来: npm link <package-path>
 $ cd ./my-application
 $ npm link ../my-library
 ```

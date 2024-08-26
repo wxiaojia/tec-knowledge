@@ -268,7 +268,7 @@ import { reactive, ref, watch } from"vue";
   count.value++;//修改依赖
 ```
 效果展示：
- ![Alt](../assets/reactivity/Image12.jpg)
+ <!-- ![Alt](../assets/reactivity/Image12.jpg) -->
 
 
 如果说传了一个count.value进去，那么也会报错，因为count.value拿到的也是属性值了，如下：
@@ -284,7 +284,7 @@ import { reactive, ref, watch } from"vue";
   count.value++;//修改依赖
   ```
 效果展示：
- ![Alt](../assets/reactivity/Image13.jpg)
+ <!-- ![Alt](../assets/reactivity/Image13.jpg) -->
 
 
 从运行结果看，也报了一个警告，所以说这块得注意下😚
@@ -302,7 +302,7 @@ import { reactive, ref, watch } from"vue";
   state.a++;
   ```
 效果展示：
- ![Alt](../assets/reactivity/Image14.jpg)
+ <!-- ![Alt](../assets/reactivity/Image14.jpg) -->
 
 
 📢 注意：无论是watch还是watchEffect，当依赖变化时，回调函数都是异步执行的，当然也会到微队列等待执行。

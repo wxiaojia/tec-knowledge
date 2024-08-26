@@ -15,18 +15,21 @@ import serverRoute from './router/server'
 import AIRoute from './router/ai'
 import payCourseRoute from './router/payCourse'
 import notesRoute from './router/notes'
+// git
+// H5
+// rust
 
 const PR = '/project'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/tec-knowledge/',
+  // outDir: '../../dist',  // 输出目录相对于 .vitepress 文件夹的路径
   title: "wxiaojia",
   description: "knowledge base",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
       {
         text: '学习文档',
         items: [

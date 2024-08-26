@@ -148,7 +148,7 @@ docker run -dp 3000:80 registry.cn-hangzhou.aliyuncs.com/tusi_personal/blog:2.0.
 ```js
 curl localhost:3000
 ```
-![启动成功](./assets/docker/6.png.png)
+![启动成功](./assets/docker/6.png)
 
 ## 
 配置nginx的代理，将接口请求到后端，所以就成了

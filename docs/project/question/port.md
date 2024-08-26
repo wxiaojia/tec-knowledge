@@ -1,4 +1,4 @@
-zhcw 
+<!-- zhcw 
 nginx 6200  (nginx)
 - '${HOST_HTTP_PORT}:6200'  (docker/docker-compose.yml)
   port: 6200
@@ -135,4 +135,4 @@ H    - elm：配置的是 Kubernetes 服务与节点之间的端口映射。
 - 你可以使用 Docker Compose 在本地开发和测试 Nginx 配置，映射 Nginx 监听的端口到主机端口。
 - 使用 Helm 将配置好的 Nginx 应用部署到 Kubernetes 集群中，通过 port 和 nodePort 进行服务暴露和访问。
 
-这样，你就能在本地开发环境中测试和调试端口配置，然后将相同的配置应用于生产环境中的 Kubernetes 集群。
+这样，你就能在本地开发环境中测试和调试端口配置，然后将相同的配置应用于生产环境中的 Kubernetes 集群。 -->
