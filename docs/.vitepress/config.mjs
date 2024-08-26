@@ -19,6 +19,7 @@ import notesRoute from './router/notes'
 const PR = '/project'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/tec-knowledge/',
   title: "wxiaojia",
   description: "knowledge base",
   themeConfig: {
