@@ -24,7 +24,7 @@ docker ps -a
 ```
 （空客前端容器为 nginx
 根据nginx设置的80端口，找到容器名
-![alt text](image-1.png)
+![alt text](./assets/image-1.png)
 
 ### 运行容器
 ```yaml
