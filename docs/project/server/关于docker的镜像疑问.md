@@ -164,14 +164,27 @@ docker push airbus-web:0.1.2 推到仓库
 
 
 ### 实践中问题及解决方案
-Q:docker build 的时候 sending build context to Docker daemon  1.748GB
+#### Q:docker build 的时候 sending build context to Docker daemon  1.748GB
 A:根目录的文件夹太多，会一起打包了，使用.dockerignore文件来排除不需要的文件和文件夹 或者把需要的放到一个文件夹中，然后再去打包
 添加ignore不知道会不会影响到其他的服务
 
-Q:复制命令 
+#### Q:复制命令 
 A：cp -r ./web ./docker
 
-Q:执行脚本，没有权限
+#### Q:执行脚本，没有权限
 chmod +x build.sh
 
 chmod +x 给文件添加执行权限
+
+每次只需要改变里面的内容，不需要把build文件删除
+
+#### Q:例如双创项目232，docker-compose文件中设置了镜像版本是变量，这个变量在哪里来的？
+A：第一种，命令行设置；第二种：根目录下.env文件，使用ll 或 ls -al 查看隐藏的文件
+
+#### Q:查看日志
+docker exec -it <container_name_or_id> /bin/sh
+
+container_name_or_id 镜像名字或id，查看docker ps
+/bin/sh 不同服务器可能某些原因不同，公司服务器可以直接 sh
+执行 docker exec -it nginx sh
+进入这个容器，就可以查看nginx日志
