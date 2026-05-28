@@ -6,12 +6,12 @@
 
 硬解码:
 mp4 explorer, 
-![思路](../assets/img2.png)
+![思路](./assets/img2.png)
 
  卡顿，需要清理数据，扔bugger数据
 
- ![图1](../assets/image.png)
+ ![图1](./assets/image.png)
 
- ![图2](../assets/image-1.png)
+ ![图2](./assets/image-1.png)
 
  
